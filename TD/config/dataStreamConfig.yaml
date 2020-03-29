@@ -1,0 +1,51 @@
+SYMBOL_LIST:
+  - TSLA # TESLA
+  - BA   # BOEING
+  - AMZN # AMAZON
+  - NFLX # NETFLIX
+  - AAPL # APPLE
+  - BABA # ALIBABA
+  - FB   # FACEBOOK
+  - ROKU
+  - DHR  # DANAHER
+  - MSFT # MICROSOFT
+
+DATA_STREAMS:
+  TIMESALE_EQUITY: # https://developer.tdameritrade.com/content/streaming-data#_Toc504640626
+    # 0: Symbol        # Ticker symbol in upper case.
+    1: Trade Time    # Trade time of the last trade in milliseconds since epoch
+    2: Last Price    # Price at which the last trade was matched
+    3: Last Size     # Number of shares traded with last trade
+    # 4: Last Sequence # Number of shares for bid
+
+# SYMBOL_LIST:
+#   - /ES
+
+# DATA_STREAMS:
+#   TIMESALE_FUTURES:
+#     1: Trade Time    # Trade time of the last trade in milliseconds since epoch
+#     2: Last Price    # Price at which the last trade was matched
+#     3: Last Size     # Number of shares traded with last trade
+
+
+
+  # QUOTE: # https://developer.tdameritrade.com/content/streaming-data#_Toc504640599
+  #   1: Bid Price     # Current Best Bid Price
+  #   2: Ask Price     # Current Best Ask Price
+  #   3: Last Price    # Price at which the last trade was matched
+  #   4: Bid Size      # Number of shares for bid
+  #   5: Ask Size      # Number of shares for ask
+
+  
+  # CHART_EQUITY: # https://developer.tdameritrade.com/content/streaming-data#_Toc504640587
+  #   0: key           # Ticker symbol in upper case.
+  #   1: Open Price    # Opening price for the minute
+  #   2: High Price    # Highest price for the minute
+  #   3: Low Price     # Chart’s lowest price for the minute
+  #   4: Close Price   # Closing price for the minute
+  #   5: Volume        # Total volume for the minute
+  #   6: Sequence      # Identifies the candle minute
+    # 7: Chart Time    # Milliseconds since Epoch
+    # 8: Chart Day     # Not useful
+
+
